@@ -3,21 +3,22 @@ import React from 'react'
 
 type ThemedImageProps = {
   type?: 'default' | 'circle';
-  width: number;
-  height: number;
-  sourceImage: ImageSourcePropType
+  width?: number;
+  height?: number;
+  sourceImage: ImageSourcePropType;
   style?: StyleProp<ImageStyle>;
+  resizeMode?: 'cover' | 'contain' | 'stretch' | 'repeat';
 }
 
-const ThemedImage = ({type, width, height, sourceImage, style}: ThemedImageProps) => {
+const ThemedImage = ({type, width, height, sourceImage, style, resizeMode, ...otherProps}: ThemedImageProps) => {
   const imageStyles = [
     { width: width, height: height },
-    type === 'circle' ? { borderRadius: width / 2 } : undefined,
+    type === 'circle' ? { borderRadius: 100000 } : undefined,
     style,
   ];
-
+  if(!resizeMode){resizeMode = 'cover'}
   return (
-    <Image source={sourceImage} resizeMode='contain' resizeMethod='scale' style={ imageStyles }/>
+    <Image source={sourceImage} resizeMode={resizeMode} style={ imageStyles } {...otherProps}/>
   )
 }
 
