@@ -24,7 +24,7 @@ const index = () => {
               Pick anything you like from 40+ TV Channels and hundreds of thousands of hours worth of content to watch in your free time.
             </ThemedText>
             <ThemedButton text='Sign In or Register' bgColor='[#ED203F]' textColor='neutral-50' route='/auth/register' />
-            <ThemedButton text='Find Content' bgColor='transparent' textColor='neutral-900' route='/(tabs)/profile' />
+            <ThemedButton text='Find Content' bgColor='transparent' textColor='neutral-600' route='/index' inline/>
           </ThemedView>
         </ScrollView>
       </SafeAreaView>
