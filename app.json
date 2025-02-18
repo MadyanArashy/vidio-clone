@@ -9,12 +9,14 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.madyanarashy.vidioclone"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/vidio-icon.png"
-      }
+      },
+      "package": "com.madyanarashy.vidioclone"
     },
     "web": {
       "bundler": "metro",
@@ -35,6 +37,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "58fd39b2-d33d-44c4-915d-d29a5e0c3ed4"
+      }
     }
   }
 }

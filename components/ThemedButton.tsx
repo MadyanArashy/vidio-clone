@@ -1,6 +1,6 @@
-import { View, Text, TouchableOpacity, StyleProp, ViewStyle, TextStyle } from 'react-native'
-import { ExternalPathString, RelativePathString, useNavigation, useRouter } from 'expo-router'
+import { useRouter } from 'expo-router'
 import React from 'react'
+import { StyleProp, Text, TextStyle, TouchableOpacity, ViewStyle } from 'react-native'
 import tw from 'twrnc'
 
 type ThemedButtonProps = {
@@ -34,4 +34,4 @@ const ThemedButton = ({text, textColor, bgColor, style, textStyle, textSize, inl
   )
 }
 
-export {ThemedButton}
+export { ThemedButton }
