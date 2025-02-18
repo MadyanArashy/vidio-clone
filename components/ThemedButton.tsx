@@ -16,7 +16,7 @@ type ThemedButtonProps = {
 
 const ThemedButton = ({text, textColor, bgColor, style, textStyle, textSize, inline, route}: ThemedButtonProps) => {
   const router = useRouter();
-  if(!bgColor) {bgColor = 'red-500'}
+  if(!bgColor) {bgColor = 'transparent'}
   if(!textColor) {textColor = 'black'}
   if(!textSize) {textSize = tw`font-semibold text-lg`}
 
@@ -28,7 +28,7 @@ const ThemedButton = ({text, textColor, bgColor, style, textStyle, textSize, inl
     </TouchableOpacity>
   )
   return inline ? (
-   <View style={tw`flex-row`}>buttonContent</View>
+    <Text style={tw`text-center`}>{buttonContent}</Text>
   ) : (
     buttonContent
   )
