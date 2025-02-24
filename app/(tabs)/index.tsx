@@ -22,12 +22,13 @@ export default function HomeScreen() {
   ]
 
   const movieData = [
+    {sourceImage: require('@/assets/images/godfather-movie-poster.png')},
+    {sourceImage: require('@/assets/images/aruna-dan-lidahnya-poster.jpg')},
+    {sourceImage: require('@/assets/images/gie-poster.jpeg')},
     {sourceImage: require('@/assets/images/agak-laen-poster.jpg')},
     {sourceImage: require('@/assets/images/sang-pemimpin-poster.jpg')},
-    {sourceImage: require('@/assets/images/agak-laen-poster.jpg')},
-    {sourceImage: require('@/assets/images/sang-pemimpin-poster.jpg')},
-    {sourceImage: require('@/assets/images/agak-laen-poster.jpg')},
-    {sourceImage: require('@/assets/images/agak-laen-poster.jpg')}
+    {sourceImage: require('@/assets/images/janji-joni-poster.jpg')},
+    {sourceImage: require('@/assets/images/princess-mononoke-poster.jpg')},
   ]
 
   const elements =
